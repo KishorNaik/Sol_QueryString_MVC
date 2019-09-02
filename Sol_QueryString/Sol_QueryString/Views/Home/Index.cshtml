@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@{
+    int id = 10;
+    string name = "Kishor Naik";
+}
+
+@*Demo 1*@
+<a class="btn btn-danger" asp-route="demo1" asp-route-id="@id ">Demo 1</a>
+
+<br />
+<br />
+<br />
+
+@*Demo 2*@
+<a class="btn btn-danger" asp-route="demo2" asp-route-id1="@id" asp-route-name="@name">Demo 2</a>
+
+<br />
+<br />
+<br />
+
+@*Demo 3*@
+<a class="btn btn-danger" asp-route="demo3" asp-route-id1="@id" asp-route-name="@name">Demo 3</a>
+
+<br />
+<br />
+<br />
+
+@*Demo 4*@
+<a class="btn btn-danger" asp-route="demo4" asp-route-id1="@id" asp-route-name="@name">Demo 4</a>
